@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class UserController extends AbstractController
 {
     /**
-     * @Route("/user/login", name="app.user.login", methods={"POST"})
+     * @Route("/users/login", name="app.user.login", methods={"POST"})
      */
     public function login(): JsonResponse
     {
@@ -22,7 +22,7 @@ class UserController extends AbstractController
     }
     
     /**
-     * @Route("/user/register", name="app.user.register", methods={"POST"})
+     * @Route("/users/register", name="app.user.register", methods={"POST"})
      */
     public function register(): JsonResponse
     {
@@ -33,7 +33,7 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/user/logout", name="app.user.logout", methods={"DELETE"})
+     * @Route("/users/logout", name="app.user.logout", methods={"DELETE"})
      */
     public function logout(): JsonResponse
     {

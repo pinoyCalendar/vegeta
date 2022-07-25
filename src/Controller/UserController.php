@@ -33,7 +33,7 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/user/logout", name="app.user.register", methods={"DELETE"})
+     * @Route("/user/logout", name="app.user.logout", methods={"DELETE"})
      */
     public function logout(): JsonResponse
     {
